@@ -9,3 +9,13 @@
   --text-color: rgba(241, 178, 206, 1);
   --bg-color: rgb(0 0 40);
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --accent-color: rgba(255, 0, 112, 1);
+  --accent-color-rgb: 255, 0, 112;
+  --main-font: 'IBM Plex Mono';
+  --text-color: rgba(241, 178, 206, 1);
+  --bg-color: rgb(0 0 40);
+  }
+}
