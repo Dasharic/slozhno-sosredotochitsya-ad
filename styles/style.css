@@ -306,19 +306,22 @@
   .main__section-text {
     grid-column: 1 / 5;
   }
-
+/*
   .main__section-two-columns .main__section-subtitle {
     grid-column: 3 / 5;
   }
-
+*/
   .main__section-two-columns .main__section-subtitle:first-of-type {
     margin-block-start: 0;
   }
-
+/*
   .main__section-two-columns .main__section-text {
     grid-column: 3 / 5;
   }
-
+*/
+  .main__section-right {
+    grid-column: 3 / 5;
+  }
   .main__section-list {
     grid-column: 3 / 5;
   }
