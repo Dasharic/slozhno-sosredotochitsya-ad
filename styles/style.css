@@ -277,6 +277,7 @@
 
   .header__title {
     grid-column: 1 / 5;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__description {
@@ -375,8 +376,7 @@
   }
 
   .footer-title {
-    margin-block-start: 443px;
-    margin-block-end: 442px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
@@ -394,7 +394,6 @@
     grid-column: 3 / 5;
     inline-size: 100%;
     justify-content: center;
-    margin: 0 0 273px 0;
   }
 
   .header__theme-menu-list {
@@ -403,6 +402,7 @@
 
   .header__title {
     grid-column: 1 / 7;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__description {
@@ -414,11 +414,7 @@
     grid-template-columns: 2fr 20px 1fr 1fr 20px 2fr;
   }
 
-  .main__section-two-columns .main__section-subtitle {
-    grid-column: 3 / 7;
-  }
-
-  .main__section-two-columns .main__section-text {
+  .main__section-right {
     grid-column: 3 / 7;
   }
 
@@ -458,6 +454,6 @@
   }
 
   .footer-title {
-    margin: 319px 0 279px 0;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
