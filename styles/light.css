@@ -10,20 +10,13 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: rgba(255, 141, 203, 1);
+  --text-accent-color: rgba(53, 52, 48, 1);
   --main-font: 'IBM Plex Mono';
+  --title-color: rgba(255, 194, 230, 1);
+  --subtitle-color: rgba(53, 52, 48, 1);
   --text-color: rgba(53, 52, 48, 1);
-  --text-color-rgb: 53, 52, 48;
+  --text-accent-color-rgb: 53, 52, 48;
   --bg-color: rgb(255, 238, 246);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --accent-color: rgba(255, 141, 203, 1);
-    --main-font: 'IBM Plex Mono';
-    --text-color: rgba(53, 52, 48, 1);
-    --text-color-rgb: 53, 52, 48;
-    --bg-color: rgb(255, 238, 246);
-  }
 }
 
 .theme-light .page {
@@ -31,48 +24,20 @@
   background-color: var(--bg-color);
 }
 
-.theme-light .header {
-  background-image: url(../images/cover-image-light.png);
-}
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: rgba(255, 141, 203, 1);
+    --text-accent-color: rgba(53, 52, 48, 1);
+    --main-font: 'IBM Plex Mono';
+    --title-color: rgba(255, 194, 230, 1);
+    --subtitle-color: rgba(53, 52, 48, 1);
+    --text-color: rgba(53, 52, 48, 1);
+    --text-accent-color-rgb: 53, 52, 48;
+    --bg-color: rgb(255, 238, 246);
+    --bg-image: url(../images/cover-image-light.png);
+  }
 
-.theme-light .decorated-zone::before {
-  border-top: 1px solid var(--text-color);
-  border-right: 1px solid var(--text-color);
-}
-
-.theme-light .decorated-zone::after {
-  border-left: 1px solid var(--text-color);
-  border-bottom: 1px solid var(--text-color);
-}
-
-.theme-light .decor__rec {
-  display: none;
-}
-
-.theme-light .header__theme-menu-button {
-  color: var(--text-color);
-}
-
-.theme-light .header__theme-menu-button:hover {
-  outline: 1px solid rgba(var(--text-color-rgb), 0.4);
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--text-color);
-}
-
-.theme-light .header__theme-menu-button_active {
-  outline: 1px solid var(--text-color);
-}
-
-.theme-light .header__title {
-  color: rgba(255, 194, 230, 1);
-}
-
-.theme-light .main__section-title {
-  color: var(--text-color);
-}
-
-.theme-light .footer-title {
-  color: rgba(255, 194, 230, 1);
+  .decor__rec {
+    display: none;
+  }
 }
